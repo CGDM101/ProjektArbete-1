@@ -1,0 +1,130 @@
+﻿            // HÅRDKODAD INSTANTIERING:
+            DepecheModeAlbum speak = new DepecheModeAlbum { Title = "speka", Description = "1981", Price = 149 };
+            DepecheModeAlbum abf = new DepecheModeAlbum { Title = "abf", Description = "1982", Price = 149 };
+            DepecheModeAlbum cta = new DepecheModeAlbum { Title = "cta", Description = "1983", Price = 149 };
+            DepecheModeAlbum sgr = new DepecheModeAlbum { Title = "sgr", Description = "1984", Price = 149 };
+            DepecheModeAlbum bc = new DepecheModeAlbum { Title = "bc", Description = "1986", Price = 149 };
+            DepecheModeAlbum mftm = new DepecheModeAlbum { Title = "mftm", Description = "1987", Price = 149 };
+            DepecheModeAlbum vio = new DepecheModeAlbum { Title = "violator", Description = "1990", Price = 149 };
+            DepecheModeAlbum sofad = new DepecheModeAlbum { Title = "sofad", Description = "1993", Price = 149 };
+            DepecheModeAlbum ult = new DepecheModeAlbum { Title = "ultra", Description = "1997", Price = 149 };
+            DepecheModeAlbum exc = new DepecheModeAlbum { Title = "exciter", Description = "2001", Price = 149 };
+            DepecheModeAlbum pta = new DepecheModeAlbum { Title = "pta", Description = "2005", Price = 149 };
+            DepecheModeAlbum sotu = new DepecheModeAlbum { Title = "sotu", Description = "2009", Price = 149 };
+            DepecheModeAlbum dm = new DepecheModeAlbum { Title = "dm", Description = "2013", Price = 149 };
+            DepecheModeAlbum spi = new DepecheModeAlbum { Title = "spirit", Description = "2017", Price = 149 };
+
+            // HÅRDKODAD LISTA:
+            albumList.Add(speak);
+            albumList.Add(abf);
+            albumList.Add(cta);
+            albumList.Add(sgr);
+            albumList.Add(bc);
+            albumList.Add(mftm);
+            albumList.Add(vio);
+            albumList.Add(sofad);
+            albumList.Add(ult);
+            albumList.Add(exc);
+            albumList.Add(pta);
+            albumList.Add(sotu);
+            albumList.Add(dm);
+            albumList.Add(spi);
+
+            // LISTA UTAN OBJEKTNAMN:
+            List<DepecheModeAlbum> oldList; // ej aktuell
+            // "Fill the list with some people."
+            oldList = new List<DepecheModeAlbum>
+            {
+                new DepecheModeAlbum // variant utan objektnamn
+                {
+                    Title="Speak & Spell",
+                    Description="1981",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="A Broken Frame",
+                    Description="1982",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Construction Time Again",
+                    Description="1983",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Some Great Reward",
+                    Description="1984",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Black Celebration",
+                    Description="1986",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Music for the Masses",
+                    Description="1987",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Violator",
+                    Description="1990",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Songs of Faith and Devotion",
+                    Description="1993",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="ULTRA",
+                    Description="1997",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Exciter",
+                    Description="2001",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Playing the Angel",
+                    Description="2005",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Sounds of the Universe",
+                    Description="2009",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Delta Machine",
+                    Description="2013",
+                    Price=149
+                },
+                new DepecheModeAlbum
+                {
+                    Title="Spirit",
+                    Description="2017",
+                    Price=149
+                },
+            };
+
+
+            // Exempel på hårdkodad dictionary:
+            Cart = new Dictionary<DepecheModeAlbum, int> // mftm och bc står alltid med i csv
+            {
+                [mftm] = 2,
+                [bc] = 1
+            };// detta ska ske i cb-eventet?
